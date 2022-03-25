@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Generator" content="EditPlus®">
+        <meta name="Author" content="">
+        <meta name="Keywords" content="">
+        <meta name="Description" content="">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var color = 'blue';
+            function changeColor() {
+                if (color == 'blue')
+                {
+                    color = 'red';
+                    console.log(color);
+                } else {
+                    color = 'blue';
+                    console.log(color);
+                }
+            }
+            // changeColor();
+
+            // 引用对象
+            let someDate = new Date(Date.parse("Apr 25, 2022"));
+            console.log(someDate);
+            let y2k = new Date(Date.UTC(2000, 0));
+            console.log(y2k);
+
+            // 起始时间
+            let start = Date.now(); 
+            console.log(start)
+            // 调用函数
+            // doSomething(); 
+            // 结束时间
+            let stop = Date.now(); 
+            result = stop - start;
+            console.log(result)
+
+            let d = new Date();
+            console.log(d.getMonth());
+
+            // 正则写法
+            let reg1 = /at/g;
+
+            // 原始值 string boolean number也可当作引用对象调用特定方法，但不能给它加属性和方法
+            // 用 new Number()这种new出来的变量，是object，这个叫引用值；而用Number('25')这样转型而来的变量类型是number，这个叫原始值
+            
+
+
+            
+
+            
+        </script>
+    </body>
+</html>
